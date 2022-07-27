@@ -9,7 +9,6 @@ let mySwipers = []
 
 function sliderinit() {
   sliders.forEach((slider, index) => {
-    console.log(slider)
     if (!slider.swiper) {
       mySwipers[index] = new Swiper(slider, {
         direction: 'horizontal',

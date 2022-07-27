@@ -1,5 +1,4 @@
 .services{
-  padding-bottom: 40px;
   &__title{
     padding-left: 16px;
     position: relative;
@@ -29,14 +28,22 @@
     gap: 10px;
   }
   &__option-img{
-    background-image: url(../img/ic/repair.svg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
+    position: relative;
+    transition: all .2s linear;
   }
   &__status-img{
-    background-image: url(../img/ic/checkstatus.svg);
-    width: 40px;
-    height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      position: relative;
+      transition: all .2s linear;
   }
   &__buttons::-webkit-scrollbar{
     width: 0;   

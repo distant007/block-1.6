@@ -1,5 +1,5 @@
 .header{
-  &__con{
+  &__container{
     padding: 19px 16px 19px 16px;
     background-color: $white;
     display: flex;
@@ -21,10 +21,8 @@
     border-radius: 50%;
   }
   &__logo{
-    background-image: url(../img/group.svg);
     width: 97px;
     height: 51px;
-    background-repeat: no-repeat;
   }
   &__option{
     display: flex;

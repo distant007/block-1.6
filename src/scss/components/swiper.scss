@@ -26,8 +26,6 @@
   line-height: 24px;
   color: $gray;
   background: linear-gradient(90deg, #F8F8F8 1.39%, #FFFFFF 100%);
-}
-.slider__title--position{
   padding: 16px;
 }
 .slider__text{
@@ -58,8 +56,8 @@
   align-content: flex-start;
   align-self: flex-end;
 }
-.swiper-wrapper .swiper-slide{
-  flex-shrink: 1;
+.swiper-slide{
+  flex-shrink: unset;
 }
 .techniks__link{
   width: 224px;
