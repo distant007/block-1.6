@@ -1,39 +1,44 @@
 .header{
-  &__container{
-    padding: 19px 16px 19px 16px;
-    background-color: $white;
+  &__items{
     display: flex;
     align-items: center;
-    position: relative;
+    justify-content: space-between;
   }
-  &__burger{
+  &__left{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    gap: 16px;
     position: relative;
-    transition: all .2s linear;
-    margin-right: 16px;
   }
-  &__burger:hover{
-    box-shadow: 0 0 5px 0 #34495e;
-    border-radius: 50%;
+  &__left::before{
+    content: "";
+    width: 2px;
+    height: 32px;
+    position: absolute;
+    left: 60px;
+    bottom: 10px;
+    background-color: $darkwhite;
+  }
+  &__right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 42px;
+  }
+  &__icons{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  &__icons:nth-child(1){
+    display: none;
   }
   &__logo{
     width: 97px;
     height: 51px;
   }
-  &__option{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    position: relative;
-    transition: all .2s linear;
-  }
-  &__option:first-child::before{
+  &__option:nth-child(1)::before{
     content: "";
     width: 2px;
     height: 32px;
@@ -42,47 +47,20 @@
     bottom: 5px;
     background-color: $darkwhite;
   }
-  &__buttons-options{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 16px;
-    gap: 16px;
-    margin-left: 20px;
-  }
   &__option:hover{
     box-shadow: 0 0 5px 0 #34495e;
     border-radius: 50%;
   }
-  &__buttons-contacts{
-    display: flex;
-    align-items: center;
+}
+.header__icons:nth-child(2){
+  position: relative;
+}
+.header__icons:nth-child(2)::before{
+    content: "";
+    width: 2px;
+    height: 32px;
     position: absolute;
-    right: 150px;
-    visibility: hidden;
-    gap: 16px;
-  } 
-  &__tel{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    transition: all .2s linear;
-  }
-  &__messenger{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    transition: all .2s linear;
-  }
-  &__profile{
-    background-image: url(../img/ic/profile.svg);
-    width: 40px;
-    height: 40px;
-    padding: 0;
-    margin-right: 16px;
-  }
+    left: -20px;
+    bottom: 5px;
+    background-color: $darkwhite;
 }
